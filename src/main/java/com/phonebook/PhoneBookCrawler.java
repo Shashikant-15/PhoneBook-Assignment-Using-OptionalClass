@@ -4,6 +4,7 @@ package com.phonebook;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+//Here a public class is initiated as name of PhoneBookEntriesImply
 public class PhoneBookCrawler {
 
     PhoneBookEntriesImply phoneBook;
@@ -11,7 +12,7 @@ public class PhoneBookCrawler {
 
     public PhoneBookCrawler(PhoneBookEntriesImply phoneBook) {
 
-        this.phoneBook = phoneBook;
+        this.phoneBook = phoneBook; // take input and stored it
     }
 
     public void findPhoneNumberByNameAndPunishIfNothingFound(String name)  {
@@ -31,7 +32,7 @@ public class PhoneBookCrawler {
                 .findFirst().get();
     }
     public PhoneBookEntriesImply getPhoneBook(){
-        return phoneBook;
+        return phoneBook;                            // output return here
     }
 
 }
